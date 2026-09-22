@@ -1,0 +1,13 @@
+{
+  "entry": [
+    "tests/**/*.test.ts"
+  ],
+  "project": [
+    "src/**/*.ts",
+    "tests/**/*.ts"
+  ],
+  "ignore": [
+    "scripts/**"
+  ],
+  "ignoreExportsUsedInFile": true
+}

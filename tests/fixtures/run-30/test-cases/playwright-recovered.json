@@ -1,0 +1,51 @@
+{
+  "uid": "pw-recovered-1",
+  "name": "проверка метрик страницы",
+  "fullName": "packages/app/e2e/tests/login.test.ts › Группа › Проверка примера",
+  "historyId": "pw-history-1",
+  "status": "passed",
+  "statusMessage": "",
+  "statusTrace": "",
+  "flaky": false,
+  "newFailed": false,
+  "hidden": false,
+  "retry": false,
+  "retriesCount": 1,
+  "retriesStatusChange": true,
+  "labels": [
+    {
+      "name": "framework",
+      "value": "playwright"
+    },
+    {
+      "name": "language",
+      "value": "javascript"
+    },
+    {
+      "name": "suite",
+      "value": "packages/app/e2e/tests/login.test.ts"
+    },
+    {
+      "name": "subSuite",
+      "value": "Метрики страницы"
+    }
+  ],
+  "parameterValues": [],
+  "testStage": {
+    "status": "passed",
+    "statusMessage": "",
+    "statusTrace": "",
+    "steps": [],
+    "attachments": []
+  },
+  "extra": {
+    "retries": [
+      {
+        "status": "failed"
+      }
+    ],
+    "history": {
+      "items": []
+    }
+  }
+}

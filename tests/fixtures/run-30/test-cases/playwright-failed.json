@@ -1,0 +1,47 @@
+{
+  "uid": "pw-failed-1",
+  "name": "проверка метрик страницы",
+  "fullName": "packages/app/e2e/tests/login.test.ts#Группа Проверка примера",
+  "historyId": "pw-history-1",
+  "status": "failed",
+  "statusMessage": "Timeout 5000ms exceeded.",
+  "statusTrace": "Error: Timeout 5000ms exceeded.\n  at packages/app/e2e/tests/login.test.ts:86:9",
+  "flaky": false,
+  "newFailed": true,
+  "hidden": false,
+  "retry": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "labels": [
+    {
+      "name": "framework",
+      "value": "playwright"
+    },
+    {
+      "name": "language",
+      "value": "javascript"
+    },
+    {
+      "name": "suite",
+      "value": "packages/app/e2e/tests/login.test.ts"
+    },
+    {
+      "name": "subSuite",
+      "value": "Метрики страницы"
+    }
+  ],
+  "parameterValues": [],
+  "testStage": {
+    "status": "failed",
+    "statusMessage": "Timeout 5000ms exceeded.",
+    "statusTrace": "Error: Timeout 5000ms exceeded.\n  at packages/app/e2e/tests/login.test.ts:86:9",
+    "steps": [],
+    "attachments": []
+  },
+  "extra": {
+    "retries": [],
+    "history": {
+      "items": []
+    }
+  }
+}

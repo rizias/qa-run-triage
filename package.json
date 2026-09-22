@@ -1,0 +1,71 @@
+{
+  "name": "@rizias/qa-run-triage",
+  "version": "0.0.0",
+  "description": "Разбор прогонов автотестов с сервера CI: сводка, падения, исходники теста из билда, журнал разборов и HTML-отчёт. Только чтение.",
+  "keywords": [
+    "cli",
+    "jenkins",
+    "ci",
+    "qa",
+    "test-triage",
+    "allure"
+  ],
+  "license": "MIT",
+  "author": "Max Smirnov",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizias/qa-run-triage.git"
+  },
+  "homepage": "https://github.com/rizias/qa-run-triage#readme",
+  "bugs": {
+    "url": "https://github.com/rizias/qa-run-triage/issues"
+  },
+  "type": "module",
+  "bin": {
+    "qa-run-triage": "./dist/cli/index.js"
+  },
+  "files": [
+    "dist",
+    "skills",
+    "docs",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "cli": "npm run build --silent && node dist/cli/index.js",
+    "lint": "eslint . --max-warnings 0",
+    "knip": "knip",
+    "check": "npm run build && npm run typecheck && npm run lint && npm run knip && vitest run",
+    "typecheck": "tsc -p tsconfig.eslint.json --noEmit",
+    "prepack": "npm run build",
+    "prepublishOnly": "npm run check",
+    "version": "node scripts/changelog-release.mjs && node scripts/skill-version.mjs"
+  },
+  "dependencies": {
+    "update-notifier": "^7.3.1",
+    "yauzl": "^3.4.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^22.10.0",
+    "@types/update-notifier": "^6.0.8",
+    "@types/yauzl": "^3.4.0",
+    "adm-zip": "^0.6.1",
+    "eslint": "^10.9.1",
+    "knip": "^6.33.0",
+    "lefthook": "^2.1.12",
+    "typescript": "^5.5.0",
+    "typescript-eslint": "^8.68.0",
+    "vitest": "^4.1.11"
+  }
+}

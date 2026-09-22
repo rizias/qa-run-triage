@@ -1,0 +1,13 @@
+pre-commit:
+  parallel: true
+  commands:
+    lint:
+      glob: "*.{ts,tsx,mts,cts,js,jsx,mjs,cjs}"
+      run: npx eslint --max-warnings 0 --no-warn-ignored {staged_files}
+    secrets:
+      run: node scripts/gitleaks-if-present.mjs
+
+pre-push:
+  commands:
+    full-check:
+      run: npm run check

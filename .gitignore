@@ -1,0 +1,17 @@
+node_modules/
+dist/
+coverage/
+.test-tmp/
+.vscode/
+.idea/
+.claude/
+.env
+.mcp.json
+
+!AGENTS.md
+!CLAUDE.md
+
+!openspec/specs/
+!openspec/specs/**
+!openspec/changes/**/specs/
+!openspec/changes/**/specs/**
